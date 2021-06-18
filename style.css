@@ -11,6 +11,67 @@ body.dark{
 	background: #1d1d1d;
 }
 
+/*=== Bagian Loading ===*/
+.loading{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #f1f1f1;
+	z-index: 99999;
+	transition: 1s;
+}
+.loader{
+	position: relative;
+	height: 200px;
+	width: 200px;
+	border: 4px solid #f1f1f1;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: -10px -10px 15px rgba(255,255,255,1),
+				10px 10px 10px rgba(0,0,0,0.1),
+				inset -10px -10px 15px rgba(255,255,255,0.5),
+				inset 10px 10px 10px rgba(0,0,0,0.1);
+}
+.loader::before{
+	content: '';
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	right: 25px;
+	bottom: 25px;
+	background: #f1f1f1;
+	border-radius: 50%;
+	border: 4px solid #f1f1f1;
+	box-shadow: inset -10px -10px 15px rgba(255,255,255,0.5),
+				inset 10px 10px 10px rgba(0,0,0,0.1);
+}
+.loader span{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+	z-index: -1;
+	filter: blur(20px);
+	animation: animate 0.7s linear infinite;
+}
+@keyframes animate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
 /*=== Bagian General ===*/
 .general{
 	margin-top: 40px;

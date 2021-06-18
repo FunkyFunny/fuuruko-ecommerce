@@ -26,6 +26,18 @@
 
 </head>
 <body>
+    <!-- Bagian Loading -->
+    <section class="loading">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <!-- Bagian Loading Akhir -->
+
     <!-- Bagian Navbar -->
     <nav>
         <a href="" class="logo">FuuRuko.</a>
@@ -550,5 +562,14 @@
 
     <!-- My JavaScript -->
     <script type="text/javascript" src="script.js"></script>
+
+    <!-- Jquery JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loading').fadeToggle();
+        }, 1500);
+    </script>
+    
 </body>
 </html>

@@ -25,6 +25,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- Bagian Loading -->
+    <section class="loading">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <!-- Bagian Loading Akhir -->
+
     <!-- Bagian Navbar -->
     <nav>
         <a href="" class="logo">FuuRuko.</a>
@@ -161,8 +173,8 @@
             </div>
         </div>
     </section>
-    <!-- Bagian Question 2 Akhir -->
-	
+    <!-- Bagian Question 2 Akhir -->	
+
     <!-- Bagian Footer -->
     <footer>
         <div class="container">
@@ -190,6 +202,14 @@
                 this.classList.toggle('active')
             })
         }
+    </script>
+    
+    <!-- Jquery JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loading').fadeToggle();
+        }, 1500);
     </script>
 </body>
 </html>
