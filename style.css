@@ -33,7 +33,11 @@ body.dark{
 	height: 200px;
 	width: 200px;
 	border: 4px solid #f1f1f1;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
 	border-radius: 50%;
+	-webkit-overflow: hidden;
+	-moz-overflow: hidden;
 	overflow: hidden;
 	box-shadow: -10px -10px 15px rgba(255,255,255,1),
 				10px 10px 10px rgba(0,0,0,0.1),
@@ -48,6 +52,8 @@ body.dark{
 	right: 25px;
 	bottom: 25px;
 	background: #f1f1f1;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
 	border-radius: 50%;
 	border: 4px solid #f1f1f1;
 	box-shadow: inset -10px -10px 15px rgba(255,255,255,0.5),
@@ -57,6 +63,8 @@ body.dark{
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
 	border-radius: 50%;
 	background: linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
 	z-index: -1;
